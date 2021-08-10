@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function PlantInside({ planting }) {
   return (
-    <Layout title={planting.title} description={planting.moplantingvie_description}>
+    <Layout title={planting.title} description={planting.planting_description}>
       <div className='pt-6'>
         <Link href='/'>
           <a className='text-red-500'>&larr; Back to home</a>
@@ -15,9 +15,12 @@ export default function PlantInside({ planting }) {
         <div className='w-full md:w-auto'>
           <Image
             className='rounded-lg w-full sm:w-64'
-            src={`${baseUrl}${planting.poster[0] && planting.poster[0].url}`}
+            src={`${planting.poster[0] && planting.poster[0].url}`}
+            // i took ${baseUrl} from up
             alt={planting.title}
-          />
+            width={100}
+            height={150}
+            />
         </div>
         <div className='w-full md:flex-1 flex flex-col mt-6 md:mt-0'>
           <div className='flex-1'>

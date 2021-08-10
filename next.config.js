@@ -5,6 +5,8 @@
 
 module.exports = {
   images: {
-    domains: ['strapi-plants-provider.s3.amazonaws.com'],
+    domains: [process.env.NEXT_PUBLIC_S3_BUCKET],
   },
 }
+
+
