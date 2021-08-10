@@ -9,8 +9,6 @@ export default function Plantings({ plantings }) {
         <section className='grid grid-cols-1 sm:grid-cols-2 py-10 gap-1 sm:gap-6 lg:gap-10 items-stretch md:grid-cols-3 lg:grid-cols-4'>
           {plantings.map((planting) => (
            <Planting key={planting.id} planting={planting}></Planting>
-            // <MovieCard key={movie.title} movie={movie} />
-            // console.log(movie)
           ))}
         </section>
       </Layout>

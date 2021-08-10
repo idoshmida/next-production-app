@@ -1,3 +1,10 @@
+// module.exports = {
+//   reactStrictMode: true,
+// }
+
+
 module.exports = {
-  reactStrictMode: true,
+  images: {
+    domains: ['strapi-plants-provider.s3.amazonaws.com'],
+  },
 }

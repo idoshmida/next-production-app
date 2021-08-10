@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout'
 import Link from 'next/link'
 import { baseUrl, fetchQuery } from '../../utils'
+import Image from 'next/image'
 
 export default function PlantInside({ planting }) {
   return (
@@ -12,7 +13,7 @@ export default function PlantInside({ planting }) {
       </div>
       <section className='flex flex-col md:flex-row md:space-x-6 py-10'>
         <div className='w-full md:w-auto'>
-          <img
+          <Image
             className='rounded-lg w-full sm:w-64'
             src={`${baseUrl}${planting.poster[0] && planting.poster[0].url}`}
             alt={planting.title}
