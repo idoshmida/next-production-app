@@ -8,7 +8,7 @@ export default function PlantInside({ planting }) {
     <Layout title={planting.title} description={planting.planting_description}>
       <div className='pt-6'>
         <Link href='/'>
-          <a className='text-red-500'>&larr; Back to home</a>
+          <a className='text-red-500'>&larr; Back to home idoshmidsmids</a>
         </Link>
       </div>
       <section className='flex flex-col md:flex-row md:space-x-6 py-10'>
